@@ -1,0 +1,8 @@
+Commands
+create table employee(emp_id varchar(30) primary key,emp_name varchar(100),area_of_interest varchar(50),salary int);
+create table project(pid varchar(30) primary key,start_date date,end_date date,domain varchar(200));
+create table works_on(emp_id varchar(30) references employee,pid varchar(30) references project,progress varchar(200));
+
+Dependencies
+jpa,lombok,dev tools,mysql driver,spring web,h2 database
+
